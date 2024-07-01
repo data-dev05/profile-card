@@ -9,40 +9,41 @@
   <title>Profile card component</title>
 </head>
 <body>
-  <img src="./images/bg-pattern-top.svg" alt="pattern-top">
+  <img id="pattern-top" src="./images/bg-pattern-top.svg" alt="pattern-top">
 
   <main>
-    <div>
       <img src="./images/bg-pattern-card.svg" alt="pattern-card">
-    </div>
-    <div>
+    <div id="information">
+      <div id="img-profile-container">
+        <img id="img-profile" src="./images/image-victor.jpg" alt="image-profile">
+      </div>
       <p>
-        <span>Victor Crest</span>
-        <span>26</span>
+        <span id="name">Victor Crest</span>
+        <span id="age">26</span>
       </p>
-      <p>London</p>
+      <p id="country">London</p>
 
       <hr>
   
-      <div>
-        80K
-        Followers
-      </div>
-  
-      <div>
-        803K
-        Likes
-      </div>
-  
-      <div>
-        1.4K
-        Photos
+      <div id="stats">
+        <div>
+          <p class="stat">80K</p>
+          <p class="stat-title">Followers</p>
+        </div>
+    
+        <div>
+          <p class="stat">803K</p>
+          <p class="stat-title">Likes</p>
+        </div>
+    
+        <div>
+          <p class="stat">1.4K</p>
+          <p class="stat-title">Photos</p>
+        </div>
       </div>
     </div>
   </main>
-
-  <div>
-    <img src="./images/bg-pattern-bottom.svg" alt="pattern-botton">
-  </div>
+  
+    <img id="pattern-bottom" src="./images/bg-pattern-bottom.svg" alt="pattern-botton">
 </body>
 </html>

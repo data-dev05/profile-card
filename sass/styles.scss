@@ -5,3 +5,118 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-cyan;
+    font-size: $font-size-name-and-stats;
+    font-family: $family-kumbh-sans;
+    overflow: auto;
+
+    main {
+        min-width: 300px;
+        width: 90%;
+        max-width: 350px;
+        min-height: 55%;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #name,
+        .stat {
+            font-weight: 700;
+            color: $very-dark-desaturated-blue;
+        }
+
+        #name {
+            margin-right: 0.3rem;
+        }
+
+
+        #age,
+        #country,
+        .stat-title {
+            color: $dark-grayish-blue;
+            font-weight: 400;
+        }
+
+        #country {
+            margin-top: -0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .stat-title {
+            font-size: 0.6rem;
+        }
+
+        #stats {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            div {
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        
+
+
+    }
+    
+    #pattern-top {
+        position: fixed;
+        top: -600px;
+        right: 45vw;
+        z-index: -1;
+    }
+
+    #pattern-bottom {
+        position: fixed;
+        top: 289px;
+        left: 48vw;
+        z-index: -1;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: gainsboro;
+        width: 100%;
+    }
+
+    #information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #img-profile-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 50px;
+    }
+
+    #img-profile {
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        border: 5px solid white;
+        display: inline;
+    }
+}

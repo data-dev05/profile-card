@@ -5,4 +5,100 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: auto;
+}
+body main {
+  min-width: 300px;
+  width: 90%;
+  max-width: 350px;
+  min-height: 55%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body main img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+body main #name,
+body main .stat {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+body main #name {
+  margin-right: 0.3rem;
+}
+body main #age,
+body main #country,
+body main .stat-title {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+body main #country {
+  margin-top: -0.5rem;
+  font-size: 0.8rem;
+}
+body main .stat-title {
+  font-size: 0.6rem;
+}
+body main #stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body main #stats div {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #pattern-top {
+  position: fixed;
+  top: -600px;
+  right: 45vw;
+  z-index: -1;
+}
+body #pattern-bottom {
+  position: fixed;
+  top: 289px;
+  left: 48vw;
+  z-index: -1;
+}
+body hr {
+  border: none;
+  height: 1px;
+  background-color: gainsboro;
+  width: 100%;
+}
+body #information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body #img-profile-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+}
+body #img-profile {
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  border: 5px solid white;
+  display: inline;
+}
+
 /*# sourceMappingURL=styles.css.map */
